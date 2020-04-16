@@ -8,29 +8,24 @@ int get_num(int height[], int m)
     int sum = 0;
     if (m == 1)
     {
-        goto end;
+        return 1;
     }
-    if (height[0] > height[1])              //第一个高度大于第二个高度就算一个peak
+    if (height[0] > height[1]) //第一个高度大于第二个高度就算一个peak
     {
         sum++;
     }
-    if (height[m - 1] > height[m + 1])      //倒数第二个高度
+    if (height[m - 1] > height[m - 2]) //最后一个高度高于倒数第二个
     {
         sum++;
     }
-    for (i = 1; i < m; i++)
+    for (i = 1; i < m - 1; i++)
     {
-        if (height[i] > height[i + 1])
+        if (height[i] > height[i + 1] && height[i] > height[i - 1])
         {
-            if (height[i] > height[i - 1])
-            {
                 sum++;
-            }
         }
     }
-    m = sum;
-    end:
-    return m;
+    return sum;
 }
 
 void peak_num(void)
