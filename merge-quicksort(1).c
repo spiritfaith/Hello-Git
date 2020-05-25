@@ -131,3 +131,17 @@ int main() {
   output_array(a, 8);
   return 0;
 }
+
+
+int add(int a, int b)
+{
+  int a, int b;
+  int c =a+b;
+  return c;
+}
+
+void main()
+{
+  int d;
+  d = add(1,2);
+}
