@@ -144,9 +144,9 @@ int main()
   // return 0;
   int a[] = {
       5, 0, 4, 7, 1, 3, 2, 6};
-  output_array(a, 8);
-  // qsort(a, 0, 7);
-  insertion_sort(a, 8);
+  // output_array(a, 8);
+  qsort(a, 0, 7);
+  // insertion_sort(a, 8);
   // bubble_sort(a, 8);
   output_array(a, 8);
   return 0;

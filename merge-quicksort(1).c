@@ -8,8 +8,6 @@ void insertion_sort(int a[], int n);
 void bubble_sort(int a[], int n);
 void pointer_size(void);
 
-int b[8];
-
 // feature: if sorted, then only one pass
 void insertion_sort(int a[], int n) {
   int k;  // initial: k = 1
@@ -130,18 +128,4 @@ int main() {
   // bubble_sort(a, 8);
   output_array(a, 8);
   return 0;
-}
-
-
-int add(int a, int b)
-{
-  int a, int b;
-  int c =a+b;
-  return c;
-}
-
-void main()
-{
-  int d;
-  d = add(1,2);
 }

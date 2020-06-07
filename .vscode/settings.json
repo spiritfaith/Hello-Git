@@ -11,6 +11,7 @@
     "files.associations": {
         "stdio.h": "c",
         "EVEN_ODD.C": "cpp",
-        "bd_SCP002.C": "cpp"
+        "bd_SCP002.C": "cpp",
+        "cstdlib": "c"
     }
 }
